@@ -45,6 +45,7 @@ int main ()
   struct sockaddr_in sa_cli;
   socklen_t client_len;
   // VOLAT AZ VE VLAKNE, PRO KAZDY POLL MIT SAMOSTATNY CTX
+  // POLL muze vyhodit data i kdyz realne nebudou funkci
   SSL_CTX* ctx;
   SSL*     ssl;
   X509*    client_cert;
